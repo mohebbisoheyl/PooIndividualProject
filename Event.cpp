@@ -102,7 +102,7 @@ std::istream& operator>>(std::istream& in, Event& event) {
 
     return in;
 }
-
+//commit : add get set & op== op!=
 const char* Event::getDate() const {
     return date;
 }
