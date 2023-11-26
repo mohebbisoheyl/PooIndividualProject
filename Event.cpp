@@ -1,7 +1,7 @@
 #include "event.h"
 #include <cstring>
 
-  
+  //commit id unit for event + copy contructor
 Event::Event() {
     
         this->date = new char[strlen("date") + 1];
@@ -92,4 +92,5 @@ std::ostream& operator<<(std::ostream& out, const Event& event) {
     out << "Date: " << event.date << ", Time: " << event.time << ", Name: " << event.name;
     return out;
 }
+
 
