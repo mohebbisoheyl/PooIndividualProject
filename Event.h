@@ -7,10 +7,11 @@
 class Event {
 
 private:
+unsignet const int id;
     char* date;
     char* time;
     char* name;
-
+static int counter;
 
 public:
     
@@ -32,6 +33,6 @@ public:
 
    
 };
-
+int Event::counter=1;
 #endif
 
